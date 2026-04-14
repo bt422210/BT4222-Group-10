@@ -6,7 +6,7 @@ Our repository contains a complete project implementation that evaluates four re
 ##  📌 Project Overview
 Digital news platforms publish thousands of articles every hour, making it increasingly difficult for users to identify content relevant to their interests. This challenge is especially pronounced for alternative and digital‑native media outlets, which have grown rapidly in visibility but still serve smaller audiences and operate on tighter budgets. In Singapore, mainstream publishers like CNA and The Straits Times reach over 40% of weekly users, while alternative platforms such as MustShareNews reach at most 14% of weekly users (Reuters Digital News Report, 2025). These constraints limit engagement, advertising revenue, and the ability to invest in large engineering teams or computationally intensive AI systems.
 
-This creates a clear opportunity for lightweight, efficient recommendation systems tailored to alternative media, helping improve content discoverability and user engagement despite limited resources. To emulate the scale of such platforms, we use the Microsoft News Dataset (Small), which contains approximately 50,000 users and 100,000 news articles, figures comparable to those of alternative news platforms. 
+This is indeed an impeccable opportunity for to create recommendation systems tailored to alternative media, helping improve content discoverability and user engagement despite limited resources. To emulate the scale of such platforms, we use the Microsoft News Dataset (Small), which contains approximately 50,000 users and 100,000 news articles, figures comparable to those of alternative news platforms. 
 
 In this project, we implement and evaluate models listed below, in increasing order of complexity and cost:
 
