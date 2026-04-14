@@ -65,8 +65,7 @@ This file contains robust implementation and optimisation of feed‑forward neur
 ### **Step 6: NRMS_Models**
 Located in Folder: **`6_NRMS_models/`**
 This folder contains multiple NRMS variants with different hyperparameters (attention heads, dropout rates). 
-> Note: Before the running the files inside the folder, please download and run the parquet files inside this link:
-> 
+> Note: Before the running the files inside the folder, please download and run the parquet files inside this [link](https://docs.google.com/document/d/1GWXPndscxwh2p-puyxadVP5N5X-Lwo2h11wdBwTK5BI/edit?usp=sharing)
 
 
 ## 👥 Contributors
