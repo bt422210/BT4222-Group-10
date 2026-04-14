@@ -1,2 +1,89 @@
-# BT4222-Group-10
-Later we add lah 
+# News Recommendation Models on Microsoft MINDS (small) Dataset 
+
+Our repository contains a complete project implementation, in which we evaluate four recommendation models and their performance on the Microsoft MINDS (small) Dataset. Our aim is to compare classical and neural architectures in addressing information overload and improving personalised news delivery, with a particular focus on lightweight solutions feasible for smaller alternative news platforms in Singapore. 
+
+
+##  📌 Project Overview
+Digital news platforms publish thousands of articles every hour, making it increasingly difficult for users to identify content relevant to their interests. This challenge is especially pronounced for alternative and digital‑native media outlets, which have grown rapidly in visibility but still serve smaller audiences and operate on tighter budgets. In Singapore, mainstream publishers like CNA and The Straits Times reach over 40% of weekly users, while alternative platforms such as MustShareNews reach at most 14% of weekly users (Reuters Digital News Report, 2025). These constraints limit engagement, advertising revenue, and the ability to invest in large engineering teams or computationally intensive AI systems.
+
+This creates a clear opportunity for lightweight, efficient recommendation systems tailored to alternative media, helping improve content discoverability and user engagement despite limited resources. To emulate the scale of such platforms, we use the Microsoft News Dataset (Small), which contains approximately 50,000 users and 100,000 news articles, figures comparable to those of alternative news platforms. 
+
+In this project, we implement and evaluate four models, in increasing order of complexity and cost:
+
+1. **User‑Based Collaborative Filtering (UBCF)**
+2. **Content‑Based Filtering (CBF)**
+3. **Multilayer Perceptron (MLP)**
+4. **Neural News Recommendation with Multi‑Head Self‑Attention (NRMS)**
+   
+## 🧭 Workflow Overview (Steps 1–6)
+
+Our project follows a clear end‑to‑end pipeline, reflected directly in the notebook structure. Each step corresponds to a specific stage in data preparation, feature construction, and model development.
+
+### **Step 1: Data Preprocessing & Embedding Generation**
+**`1_data_preprocess.ipynb`**  
+This file focuses on data cleaning and preprocessing to prepare the MINDS news recommendation dataset for further Exploratory Data Analysis (EDA) later on. 
+
+We begin by loading the data and establishing a **global index** for consistent tracking of users and news items. We then normalise the metadata by merging sparse categories and creating defined sub-clusters to make the news data more structured and manageable for analysis.
+After **handling missing values** in critical news text fields like entities and abstracts, categorical labels are encoded into numerical formats. 
+
+Next, we perform a **temporal split** of the data to produce our training, validation and tests sets. 
+Lastly, **negative sampling** is performed on the **training** set. For each positive click, 4 of the non-clicked articles are randomly sampled from the same impression, reducing the ratio from 1:24 to a more balanced 1:4 positive to negative ratio. 
+
+**`1.1_news_embeddings.ipynb`**  
+This file generates BERT embeddings for title and abstract for each article. It then concatenates BERT  title embeddings and abstract embeddings to create a `title_abstract_embeddings` 
+
+**`1.2_entity_embeddings.ipynb`**  
+This file generates entity embeddings to form KG Title Entity Embedding, KG Abstract Entity Embedding, NER Title Entity Embedding, NER Abstract Entity Embedding
+
+
+### **Step 2: Exploratory Data Analysis (EDA)**
+**`2_eda.ipynb`**  
+This file  analyses user behaviour, news distribution, categories, and interaction patterns to guide feature engineering decisions which is described in the next session. 
+
+### **Step 3: Feature Engineering**
+**`3_feature_engineering.ipynb`**  
+This file all engineered feature sets used in the models:
+- User features  
+- News features  
+- Interaction features  
+- Context features  
+
+### **Step 4: Classical Models**
+Folder: **`4_basic_models/`**
+
+Includes:
+- User‑Based Collaborative Filtering (UBCF)  
+- Item‑Based Collaborative Filtering (IBCF)  
+- Content‑Based Filtering (CBF)
+
+### **Step 5: MLP Model**
+**`5_MLP_model.ipynb`**  
+This is a feed‑forward neural network trained on engineered user, news, and interaction features.
+
+### **Step 6: NRMS Models**
+Folder: **`6_NRMS_models/`**
+Contains multiple NRMS variants with different hyperparameters (attention heads, dropout rates), enabling comparison of model complexity vs. performance. 
+
+## 👥 Contributors
+
+- **Betty**  
+- **Jolie**  
+- **Kaitlyn**  
+- **Rae**
+- **Zhao En**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
