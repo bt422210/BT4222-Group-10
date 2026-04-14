@@ -48,7 +48,7 @@ These include:
 - Interaction Features
 - Context features  
 
-### **Step 4: Classical Models**
+### **Step 4: Basic Models**
 
 Located in: **`4_Basic_Models/`**
 
