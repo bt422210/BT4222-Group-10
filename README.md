@@ -58,7 +58,7 @@ This folder contains the implementation of three baseline recommenders:
 
 ### **Step 5: MLP_Model**
 **`5_MLP_model.ipynb`**  
-This file contains robust implementation and optimisation of feed‑forward neural network (MLP) using basic and feature engineered features. 
+This file contains robust implementation and optimisation of MLP using basic and feature engineered features. 
 
 ### **Step 6: NRMS_Models**
 Located in Folder: **`6_NRMS_models/`**
