@@ -17,7 +17,7 @@ In this project, we implement and evaluate models listed below, in increasing or
    
 ## 🧭 Workflow Overview (Steps 1–6)
 
-Our project follows a clear end‑to‑end pipeline, reflected directly in the notebook structure. Each step corresponds to a specific stage in data preparation, feature construction, and model development.
+Our project follows a clear end‑to‑end pipeline, numbered based on steps. Each step corresponds to a specific stage in data preparation, feature construction, and model development.
 
 ### **Step 1: Data Preprocessing & Embedding Generation**
 **`1_data_preprocess.ipynb`**  
