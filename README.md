@@ -10,8 +10,7 @@ This creates a clear opportunity for lightweight, efficient recommendation syste
 
 In this project, we implement and evaluate models listed below, in increasing order of complexity and cost:
 
-1. **User‑Based Collaborative Filtering (UBCF)**
-2. **Item‑Based Collaborative Filtering (IBCF)**   
+1. **User‑Based Collaborative Filtering (UBCF)** 
 3. **Content‑Based Filtering (CBF)**
 4. **Multilayer Perceptron (MLP)**
 5. **Neural News Recommendation with Multi‑Head Self‑Attention (NRMS)**
@@ -55,7 +54,6 @@ Located in: **`4_Basic_Models/`**
 
 This folder contains the implementation of three baseline recommenders:
 - User‑Based Collaborative Filtering (UBCF)  
-- Item‑Based Collaborative Filtering (IBCF)  
 - Content‑Based Filtering (CBF)
 
 ### **Step 5: MLP_Model**
