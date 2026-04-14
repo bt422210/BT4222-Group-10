@@ -33,7 +33,7 @@ Lastly, negative sampling is performed on the training set. For each positive cl
 This file generates BERT embeddings for each article's title and abstract. It then concatenates BERT  title embeddings and abstract embeddings to create a title_abstract_embeddings
 
 **`1.2_entity_embeddings.ipynb`**  
-This file generates entity embeddings to form KG Title Entity Embedding, KG Abstract Entity Embedding, NER Title Entity Embedding, and NER Abstract Entity Embedding
+This file generates entity embedding, creating KG Title Entity Embedding, KG Abstract Entity Embedding, NER Title Entity Embedding, and NER Abstract Entity Embedding
 
 ### **Step 2: Exploratory Data Analysis (EDA)**
 **`2_eda.ipynb`**  
@@ -45,7 +45,7 @@ This file is responsible for generating more advanced features that will be used
 These include: 
 - User features  
 - News features
-- Implementation Features
+- Interaction Features
 - Context features  
 
 ### **Step 4: Classical Models**
