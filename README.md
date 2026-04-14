@@ -1,6 +1,6 @@
 # News Recommendation Models on Microsoft MINDS (small) Dataset 
 
-Our repository contains a complete project implementation that evaluates four recommendation models and their performance on the Microsoft MINDS (small) Dataset. Our aim is to compare classical and neural architectures in addressing information overload and improving personalised news delivery, with a particular focus on lightweight solutions feasible for smaller alternative news platforms in Singapore.
+Our repository contains a complete project implementation that evaluates four recommendation models and their performance on the Microsoft MINDS (small) Dataset. Our aim is to compare classical and neural architectures in addressing information overload and improving personalised news delivery, with a particular focus on models feasible for smaller alternative news platforms in Singapore.
 
 
 ##  📌 Project Overview
